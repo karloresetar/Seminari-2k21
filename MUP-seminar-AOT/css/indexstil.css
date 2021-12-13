@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#35424a;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    padding: 25px 100px;
+    border-bottom:2px solid rgb(190, 97, 10);
+}
+
+header h2{
+    text-transform: uppercase;
+    color:rgb(238, 238, 235)
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color:inherit;
+}
+
+
+/* ABOUT SEKTOR */
+#prvi-dio{
+    background:url(../img/aotbackground.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom:2px solid rgb(190, 97, 10);
+}
+  
+.bg-vel{
+    height:900px;
+
+}
+  
+#prvi-dio h2{
+    display:flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color:rgb(214, 214, 205);
+}
+  
+#prvi-dio p{
+    color:#ccc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 130px;
+}
+
+/* BOXOVI */
+#drugi-dio h2{
+    text-align: center;
+    color:rgb(238, 238, 235);
+    margin-top: 20px;
+}
+
+.box-podrucje{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.zasebni-box{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    background-color:rgb(192, 192, 182);
+    text-align: center;
+    margin:50px;
+    padding: 20px;
+}
+
+/* rgb(192, 192, 182); stara boja boxova */ 
+
+.img-podrucje{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border:4px solid rgb(219, 149, 84);
+    border-radius: 50%;
+    margin: 15px;
+    padding: 50px;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* rgb(216, 152, 189); stara boja za border */
+
+.zasebni-box:nth-child(1) .img-podrucje{
+    background-image: url(../img/1.jpg);
+}
+
+.zasebni-box:nth-child(2) .img-podrucje{
+    background-image: url(../img/2.jpg);
+}
+
+.zasebni-box:nth-child(3) .img-podrucje{
+    background-image: url(../img/3.png);
+}
+
+.header-text{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.img-text p{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.zasebni-box:hover{
+    background:rgb(204, 204, 149);
+    transition: .4s;
+}
+
+/* NAVIGACIJA */
+
+.navigacija{ 
+    display:flex;
+    justify-content:center;
+}
+
+.navigacija li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navigacija li a {
+    color:rgb(238, 238, 235)
+}
+
+.navigacija li a:hover {
+    color:rgb(190, 97, 10);
+    transition: .5s;
+}
+
+/* FOOTER */
+
+footer{
+    border-top: 2px solid rgb(190, 97, 10);
+}
+
+footer p{
+    display:flex;
+    justify-content: center;
+    padding:35px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(238, 238, 235);
+}
+
+
+@media only screen and (max-width: 767px){
+    section {
+      background-image: url(../img/aotbackground.png);
+    }
+
+    .showcase-content{
+        margin:0 auto;
+        width:900px;
+    }
+    
+}

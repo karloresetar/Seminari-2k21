@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: poppins;
+    background:url(../img/probajbg2.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;			
+	background-size:cover;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    padding: 35px 25px;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom:3px solid rgb(221, 199, 179);
+}
+
+header h2{
+    text-transform: uppercase;
+    color:rgb(238, 238, 235)
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+    color:inherit;
+}
+
+/* NAVIGACIJA */
+
+.navigacija{ 
+    display:flex;
+    justify-content:center;
+}
+
+.navigacija li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navigacija li a {
+    color:rgb(238, 238, 235)
+}
+
+.navigacija li a:hover {
+    color:rgb(190, 97, 10);
+    transition: .5s;
+}
+
+/* KVIZ SEKCIJA */
+
+
+
+#main-kviz{
+    display:flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#kviz{
+    width: 600px;
+    height: auto;
+    border-radius: 50px;
+    background-color:rgba(206, 191, 191, 0.589);
+    margin:50px;
+    text-align: center;
+    padding: 20px;
+}
+
+#kviz h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:rgb(43, 29, 33);
+}
+
+#kviz p{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    color:rgb(48, 21, 21);
+}
+
+#kviz img{
+    padding-top: 20px;
+    border-radius: 40px;
+}
+
+
+
+/* rgba(206, 191, 191, 0.589) */
+
+#botun{
+    width: 200px;
+    height: 50px;
+    margin-top: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 10px;
+    color:rgb(48, 21, 21);
+    background-color:rgba(206, 191, 191, 0.733);
+    cursor:pointer;
+}
+
+#correct{
+    margin-top: 40px;
+}
+#message{
+    margin-top: 10px;
+}
+
+/* rgba(199, 199, 174, 0.589); stara boja boxa*/
+
+
+@media only screen and (max-width: 767px){
+    section {
+      background-color: #653943;
+    }
+}
+
+
+
+

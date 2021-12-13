@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Baze podataka 2 seminar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+
+
+<div class="form_center">
+	<div class="primjeri">
+		<button class="option blue" type="button" onclick="loadExample('example1')">Primjer 1</button>
+		<button class="option blue" type="button" onclick="loadExample('example2')">Primjer 2</button>
+		<button class="option blue" type="button" onclick="loadExample('example3')">Primjer 3</button>
+		<button class="option blue" type="button" onclick="loadExample('example4')">Primjer 4</button>
+		<button class="option blue" type="button" onclick="loadExample('example5')">Primjer 5</button>
+
+
+	</div>
+	<div class="form_left">
+		<form>
+
+			<span class="bold">Relacija:</span> (Space izmedu) <br>
+			<input type="text" id="attributes_in" class="attributes_in" ><br><br>
+			<span class="bold">FO</span> (Space izmedu) <br>
+			<span id="input_form"></span>
+			<button type="button" onclick="fd_input()">Dodaj FO</button><br>
+
+			<br>
+			<div style="text-align: right;">
+				<button class="option red" type="button" onclick="initialize()">Reset</button><br>
+			</div>
+
+			<br>
+			<!-- <button class="option blue" type="button" onclick="main_minimal_cover()">Minimal Cover</button>
+			<span id="minimal_cover_field"></span> -->
+
+			<button class="option blue" type="button" onclick="main_candidate_keys()">Ključ</button><br>
+			<span id="candidate_keys_field"></span>
+
+			<button class="option blue" type="button" onclick="main_check_normal_form()">Provjeri NF</button>
+			<span id="check_normal_form_field"></span>
+
+			<button class="option blue" type="button" onclick="main_normalize_to_3nf()">Normaliziraj 3NF</button><br>
+			<span id="normalize_to_3nf_field"></span>
+<!-- 
+			<button class="option blue" type="button" onclick="main_find_closure()">Find Closure</button>
+			<span id="find_closure_field"></span> -->
+		</form>
+	</div>
+</div>
+
+<p> &copy Karlo Rešetar - Baze podataka 2 seminar ( Provjera i normalizacija formi )  </p>
+</body>
+</html>

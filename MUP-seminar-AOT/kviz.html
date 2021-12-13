@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Seminarski rad">
+    <meta name="keywords" content="Seminar">
+    <meta name="author" content="Karlo Rešetar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kvizstil.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script type="text/javascript" src="./js/kviz.js"></script>
+    <title>Seminar Karlo Rešetar</title>
+</head>
+
+<body>
+    <header>
+        <h2><a href="#">Attack on titan Quiz</a></h2>
+        <nav>
+            <ul class="navigacija">
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="#">Kviz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main-kviz">
+        <form name="kviz" id="kviz">
+            <div>
+                <img src="img/mikasa.png" height="200" width="400">
+                <h2>1. Kako se zove Eren-ova posvojena sestra?</h2>
+                <p><input type="radio" name="question1" value="Carla Jaeger">Carla Jaeger</p>
+                <p><input type="radio" name="question1" value="Mikasa Ackermann">Mikasa Ackermann</p>
+                <p><input type="radio" name="question1" value="Sasha Braus">Sasha Braus</p>
+                <p><input type="radio" name="question1" value="Anka Rheinberger">Anka Rheinberger</p>
+            </div>
+
+            <div>
+                <img src="img/bertholdt.png" height="200" width="400">
+                <h2>2. Tko je ovo na slici?</h2>
+                <p><input type="radio" name="question2" value="Bertholdt Hoover">Bertholdt Hoover</p>
+                <p><input type="radio" name="question2" value="Kenny Ackermann">Kenny Ackermann</p>
+                <p><input type="radio" name="question2" value="Dennis Aiblinger">Dennis Aiblinger</p>
+                <p><input type="radio" name="question2" value="Reiner Braun">Reiner Braun</p>
+            </div>
+
+            <div>
+                <img src="img/ArmoredTItan.png" height="200" width="400">
+                <h2>3. Tko je trenutni nasljednik oklopljenog Titan-a?</h2>
+                <p><input type="radio" name="question3" value="Zeke Jaeger">Zeke Jaeger</p>
+                <p><input type="radio" name="question3" value="Eren Jaeger">Eren Jaeger</p>
+                <p><input type="radio" name="question3" value="Armin Arlelt">Armin Arlelt</p>
+                <p><input type="radio" name="question3" value="Reiner Braun">Reiner Braun</p>
+            </div>
+
+            <div>
+                <img src="img/1sezonaaot.png" height="200" width="400">
+                <h2>4. Od koliko se epizoda sastoji prva sezona AoT-a</h2>
+                <p><input type="radio" name="question4" value="20">20</p>
+                <p><input type="radio" name="question4" value="12">12</p>
+                <p><input type="radio" name="question4" value="25">25</p>
+                <p><input type="radio" name="question4" value="50">50</p>
+            </div>
+
+            <div>
+                <img src="img/wallmaria.jpg" height="200" width="400">
+                <h2>5. Koji su Titani probili Wall Maria?</h2>
+                <p><input type="radio" name="question5" value="Attack Titan,Female Titan">Attack Titan,Female Titan</p>
+                <p><input type="radio" name="question5" value="Attack Titan,Founding Titan">Attack Titan,Founding Titan</p>
+                <p><input type="radio" name="question5" value="Colossal Titan,Armored Titan">Colossal Titan,Armored Titan</p>
+                <p><input type="radio" name="question5" value="Colossal Titan, Attack Titan">Colossal Titan, Attack Titan</p>
+            </div>
+
+            <div>
+                <img src="img/levi.jpg" height="200" width="400">
+                <h2>6. Tko se smatra "najjačim vojnikom?"</h2>
+                <p><input type="radio" name="question6" value="Levi">Levi</p>
+                <p><input type="radio" name="question6" value="Eren">Eren</p>
+                <p><input type="radio" name="question6" value="Armin">Armin</p>
+                <p><input type="radio" name="question6" value="Connie">Connie</p>
+            </div>
+
+            <div id="btn-nestani">
+            <input id="botun" type="button" value="Potvrdi" onclick="result()">
+            </div>
+            <p id="correct"></p>
+            <p id="message"></p>
+            <img id="slike" width="300px">
+        </form>
+    </section>
+
+    <!-- <footer>
+        <p>&copy; MUP Karlo Rešetar 2021. god.</p>
+    </footer> -->
+</body>
+</html>
